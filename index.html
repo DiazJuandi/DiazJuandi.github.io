@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrar y Descifrar Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Parte izquierda: entrada de texto -->
+        <div class="left-section">
+            <h1>Cifrar y Descifrar Texto</h1>
+            <input type="text" id="inputText" placeholder="Escribe tu texto aquí">
+            <div class="note">
+                No se aceptarán mayúsculas ni caracteres especiales.
+            </div>
+            <button class="encrypt-btn" onclick="cifrarTexto()">Cifrar</button>
+            <button class="decrypt-btn" onclick="descifrarTexto()">Descifrar</button>
+            
+        </div>
+
+        <!-- Parte derecha: salida de texto -->
+        <div class="right-section">
+            <div class="image-container">
+                <img src="C:\Users\diego\OneDrive\Escritorio\DiazJuandi\Imagenes\Muñeco.png" alt="Imagen descriptiva">
+            </div>
+            <button class="copy-btn" onclick="copiarTexto()">Copiar</button>
+            <textarea id="outputText" class="output" readonly placeholder="El texto aparecerá aquí..."></textarea>
+            <div id="mensaje" class="message"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Diego Diaz - Proyecto 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
